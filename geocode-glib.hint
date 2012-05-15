@@ -1,0 +1,6 @@
+category: Gnome
+sdesc: "GObject interface to Yahoo PlaceFinder service (sources)"
+ldesc: "geocode-glib is a convenience library for the Yahoo! Place 
+Finder APIs. The Place Finder web service allows to do geocoding 
+(finding longitude and latitude from an address), and reverse geocoding 
+(finding an address from coordinates)."
