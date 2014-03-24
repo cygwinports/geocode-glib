@@ -1,9 +1,0 @@
-inherit gnome2
-
-
-PKG_NAMES="lib${PN}0 lib${PN}-devel girepository-GeocodeGlib1.0"
-libgeocode_glib0_CONTENTS="usr/bin/cyggeocode-glib-0.dll usr/share/doc/"
-libgeocode_glib_devel_CONTENTS="usr/include/ usr/lib/lib* usr/lib/pkgconfig/ usr/share/gtk-doc/"
-girepository_GeocodeGlib1_0_CONTENTS="usr/*/gir*/GeocodeGlib-1.0.*"
-
-KEEP_LA_FILES="none"

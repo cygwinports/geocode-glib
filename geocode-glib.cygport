@@ -1,0 +1,18 @@
+inherit gnome2
+
+NAME="geocode-glib"
+VERSION=0.99.0
+RELEASE=1
+CATEGORY="Libs"
+SUMMARY="GObject interface to Yahoo PlaceFinder service"
+DESCRIPTION="geocode-glib is a convenience library for the Yahoo! Place
+Finder APIs. The Place Finder web service allows to do geocoding (finding
+longitude and latitude from an address), and reverse geocoding (finding an
+address from coordinates)."
+
+PKG_NAMES="lib${NAME}0 lib${NAME}-devel lib${NAME}-doc girepository-GeocodeGlib1.0"
+libgeocode_glib0_CONTENTS="usr/bin/cyggeocode-glib-0.dll usr/share/doc/"
+libgeocode_glib_devel_CONTENTS="usr/include/ usr/lib/lib* usr/lib/pkgconfig/"
+libgeocode_glib_doc_CATEGORY="Doc"
+libgeocode_glib_doc_CONTENTS="usr/share/gtk-doc/"
+girepository_GeocodeGlib1_0_CONTENTS="usr/*/gir*/GeocodeGlib-1.0.*"
