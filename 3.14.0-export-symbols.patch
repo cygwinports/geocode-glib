@@ -1,0 +1,10 @@
+--- origsrc/geocode-glib-3.14.0/geocode-glib/geocode-glib.symbols	2014-06-24 17:37:44.000000000 -0500
++++ src/geocode-glib-3.14.0/geocode-glib/geocode-glib.symbols	2015-01-06 13:35:55.827824000 -0600
+@@ -34,7 +34,6 @@ geocode_reverse_resolve
+ geocode_error_quark
+ geocode_error_get_type
+ _geocode_parse_search_json
+-_geocode_parse_resolve_json
+ _geocode_read_nominatim_attributes
+ _geocode_create_place_from_attributes
+ geocode_place_get_type

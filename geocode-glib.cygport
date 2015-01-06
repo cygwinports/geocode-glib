@@ -1,7 +1,7 @@
 inherit gnome2
 
 NAME="geocode-glib"
-VERSION=3.10.0
+VERSION=3.14.0
 RELEASE=1
 CATEGORY="Libs"
 SUMMARY="GObject geocoding library"
@@ -11,10 +11,12 @@ address from coordinates). It uses Nominatim service to achieve that. It also
 caches (reverse-)geocoding requests for faster results and to avoid unnecessary
 server load."
 
-PATCH_URI="3.10.0-export-symbols.patch"
+PATCH_URI="3.14.0-export-symbols.patch"
 
-PKG_NAMES="lib${NAME}0 lib${NAME}-devel lib${NAME}-doc girepository-GeocodeGlib1.0"
-libgeocode_glib0_CONTENTS="usr/bin/cyggeocode-glib-0.dll usr/share/doc/"
+PKG_NAMES="lib${NAME}0 lib${NAME}-common lib${NAME}-devel lib${NAME}-doc girepository-GeocodeGlib1.0"
+libgeocode_glib0_REQUIRES="lib${NAME}-common"
+libgeocode_glib0_CONTENTS="usr/bin/cyggeocode-glib-0.dll"
+libgeocode_glib_common_CONTENTS="etc/postinstall/ usr/share/doc/ usr/share/icons/"
 libgeocode_glib_devel_CONTENTS="usr/include/ usr/lib/lib* usr/lib/pkgconfig/"
 libgeocode_glib_doc_CATEGORY="Doc"
 libgeocode_glib_doc_CONTENTS="usr/share/gtk-doc/"
